@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+.navbar{
+    border-bottom: 1px solid #e7e5e5;
+}
+nav span{
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 900px;
+    margin-left: 10px;
+    color: #666;
+}
+.nav-item a{
+    padding: 3px;
+    width: 85px;
+    border-radius: 3px;
+    text-align: center;
+}
+.nav-item a:hover{
+    background-color: #ecebeb;
+    padding: 3px;
+    width: 85px;
+    text-align: center;
+}
+.banner {
+    background-color: rgb(60, 67, 102);
+    padding: 5em;
+    text-align: center;
+    margin-bottom: 20px; 
+    color: aliceblue;
+    border-top-style: double;
+    border-bottom-style: double;
+}
+.musicForm{
+    border: 1px solid #999;  
+}
+.form-container {
+    border: 1px solid #cac7c7;
+    border-radius: 5px;
+    padding: 1em;  
+}
+.form-group{
+    float: left;
+    margin: 10px;
+}
+.btn{
+    margin-top: 40px;
+}
+.table-container {
+    margin-top: 50px;
+}
+.container h5{
+    background-color: rgb(60, 67, 102);
+    padding: 10px;
+    color: rgb(239, 245, 250);
+}
+th{
+ font-weight: normal;
+}
+h1{
+    font-size: 30px;
+}
+.banner p{
+    font-size: 18px;
+    font-style: italic;
+}
+.card-body p{
+   font-style: normal;
+}
+footer p{
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 20px;
+}
+footer{
+    border-top: 1px solid #e7e5e5;
+    background-color: rgb(246, 246, 247);
+    margin-top: 50px;
+    text-align: center;
+    padding: 5px;
+}

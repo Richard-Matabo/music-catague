@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Music Catalogue</title>
+    
+</head>
+<body>
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(246, 246, 247);">
+    <span>Music Catalogue</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Banner & Welcome Text-->
+<div class="banner">
+    <h1>Welcome to the Music Catalogue</h1>
+    <p>Keep track of your favorite tracks by adding, editing, and deleting information about them.<br>
+    Here, you can add detailed information about each track, including the artist, title, album, and genre. Easily update or remove tracks as your collection evolves. Our user-friendly interface is designed to make managing your music library a seamless and enjoyable experience.</p><hr />
+</div>
+
+<div class="container"> 
+    <h5>Add New Track</h5><hr />   
+    <!-- Form to add a new track -->
+    <div class="form-container">    
+        <form id="musicForm">
+            <div class="form-group">
+                <label for="artist">Artist : </label>
+                <input type="text" class="form-control" id="artist" required>
+            </div>
+            <div class="form-group">
+                <label for="title">Title : </label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="album">Album : </label>
+                <input type="text" class="form-control" id="album" required>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre : </label>
+                <input type="text" class="form-control" id="genre" required>
+            </div>
+            <button type="submit" class="btn btn-dark">Add Track</button>
+        </form>
+    </div>
+  
+    <!-- Table to display the tracks -->
+    <div class="table-container">  
+        <h5>Music Catalogue</h5><hr />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Artist</th>
+                    <th>Title</th>
+                    <th>Album</th>
+                    <th>Genre</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="trackList"></tbody>
+        </table>
+    </div>
+</div>
+<footer>
+    <p> © 2024 Music Catalogue  - All Rights Reserved | Richard Matabo - HyperionDev</p>
+</footer>
+
+<!-- Bootstrap and jQuery scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
